@@ -1,0 +1,23 @@
+<div>
+    <div ng-if="!readyOnly">
+        <input
+            type='{{type || "text"}}'
+            name='{{name}}'
+            class='{{class}}'
+            ng-class='ngClass'
+            ng-minlength='ngMinlength'
+            ng-maxlength='ngMaxlength'
+            ng-required='ngRequired'
+            ng-pattern='ngPattern'
+            ng-change='ngChange()'
+            ng-trim='ngTrim'
+            ng-model='magic.ngModel'
+        />
+        <button href="javascript:;" class="btn btn-link" ng-click="toggle($event)"><span class="{{iconOk || 'glyphicon glyphicon-ok'}}"></span></button>
+
+    </div>
+    <div ng-if="readyOnly">
+        <span id="magic_field" style="display: inline-block;padding: 3px 5px;">{{magic.ngModel}}</span><button href="javascript:;" class="btn btn-link" ng-click="toggle($event)"><span class="{{iconEdit || 'glyphicon glyphicon-pencil'}}"></span></button>
+    </div>
+</div>
+

@@ -1,0 +1,25 @@
+{
+  "name": "ngMagicalInput",
+  "description": "",
+  "main": "dist/scripts/ngMagicalInput.min.js",
+  "authors": [
+    "Zed <343650735@qq.com>"
+  ],
+  "license": "MIT",
+  "moduleType": [
+    "amd"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "fontawesome#~4.6.3",
+    "bootstrap": "3.0",
+      "angular":"1.4"
+  }
+}
